@@ -73,7 +73,9 @@ label span {
 }
 
 .bloco img {
-  float: left;
+    float: left;
+    max-width: 1200px;
+    height: auto;
 }
 
 .bloco a {
@@ -81,9 +83,10 @@ label span {
 }
 
 .conteudo-bloco {
-  float: left;
-  position: relative;
-  width: 100%;
+    float: left;
+    position: relative;
+    width: 100%;
+    background: #efefef;
 }
 
 label {
@@ -157,12 +160,13 @@ button {
 .excluir:hover{ opacity: 0.8;}
 
 .editor {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-bottom: 1px solid #fff;
-  border-top: 1px solid #fff;
-  float: left;
-  padding: 25px 0;
-  width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    float: left;
+    padding: 25px 0;
+    width: 100%;
+    min-height: 100%;
 }
 
 .editando .editor {
@@ -242,10 +246,16 @@ textarea {
 }
 
 .popup .fechar-grande {
-  left: auto;
-  margin: 0;
-  right: 30px;
-  top: 10px;
+    left: auto;
+    margin: 0;
+    right: 10px;
+    top: 10px;
+    z-index: 100000000;
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    font-size: 80px;
+    text-align: center;
 }
 
 .popup-visualizacao table {
@@ -310,4 +320,8 @@ textarea {
   float: left;
   height: 50px;
   width: 50px;
+}
+
+.bloco:first-child .excluir{
+  display: none!important;
 }

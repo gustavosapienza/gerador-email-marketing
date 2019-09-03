@@ -29,16 +29,16 @@ $(document).ready(function(){
 
   $(document).on("click",".editar",function(){
        $(this).parents(".bloco").addClass("editando");
-        alt_editando = $(this).parents(".bloco").find(".principal").attr("alt");
         url_editando = $(this).parents(".bloco").find(".link-imagem").attr("href");
         imagem_editando = $(this).parents(".bloco").find(".principal").attr("src");
+        alt_editando = $(this).parents(".bloco").find(".principal").attr("alt");
 
 
     editor = '<div class="editor">';
     editor += '<label>Url da imagem*<div class="interrogacao" title="O Link online de onde sua imagem está hospedada, exemplo http://www.gustavosapienza.com.br/imagem-teste.png"></div></label>';
-    editor += '<input type="text" class="url" value="'+url_editando+'"><br>';
-    editor += '<label>Link ao clicar na imagem<div class="interrogacao" title="O Link da página de onde você quer que o usuário seja direcionado ao clicar, exemplo: http://www.gustavosapienza.com.br/"></label>';
-    editor += '<input type="text" class="link" value="'+imagem_editando+'"><br>';
+    editor += '<input type="text" class="url" value="'+imagem_editando+'"><br>';
+    editor += '<label>Link ao clicar na imagem<div class="interrogacao" title="O Link da página de onde você quer que o usuário seja direcionado ao clicar, exemplo: http://www.gustavosapienza.com.br/"></div></label>';
+    editor += '<input type="text" class="link" value="'+url_editando+'"><br>';
     editor += '<label>Texto Alternativo<div class="interrogacao" title="O texto que será mostrado se a imagem não for carregada"></div></label>';
     editor += '<input type="text" class="alt" value="'+alt_editando+'"><br>';
     editor += '<button class="adicionar botao">Atualizar</button>';
