@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+img { border: 0px;}
+
+header {
+  background: rgba(0, 0, 0, 0) url("images/bg.jpg") repeat scroll 0 0;
+  height: 100px;
+}
+
+header img {
+  height: auto;
+  margin-left: 20px;
+  margin-top: 8px;
+  width: 80px;
+}
+
+body {
+  font-family: verdana;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #fff;
+  font-weight: normal;
+  position: absolute;
+  right: 20px;
+  top: 7px;
+}
+
+label span {
+  float: left;
+}
+
+.como-funciona {
+  color: #0078c8;
+  cursor: pointer;
+  float: left;
+  margin: 25px 0;
+  text-align: right;
+  text-decoration: underline;
+  width: 100%;
+}
+
+.youtube{ display: none;}
+
+.center {
+  display: table;
+  margin: 0 auto;
+}
+
+.bloco {
+  display: block;
+  min-width: 600px;
+  padding: 0;
+  position: relative;
+}
+
+.bloco.editando {
+  height: 250px;
+  overflow: hidden;
+}
+
+.bloco input {
+  border: 0 none;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding: 5px;
+  width: 300px;
+}
+
+.bloco img {
+  float: left;
+}
+
+.bloco a {
+  float: left;
+}
+
+.conteudo-bloco {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+label {
+  color: #fff;
+  float: left;
+  font-size: 12px;
+  margin-left: 20px;
+  width: 100%;
+}
+
+button {
+  margin-left: 20px;
+}
+
+.ferramenta {
+  display: table;
+  margin: 0 auto;
+}
+
+.funcionalidades {
+  float: left;
+  height: 50px;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+}
+
+.adicionar {
+  background-color: #eb7c44;
+  border: 0 none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.finalizar {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+.visualizar {
+  display: none;
+  position: absolute;
+  right: 60px;
+}
+
+.mais {
+  margin-right: -15px;
+  position: absolute;
+  right: 50%;
+}
+
+
+.excluir {
+  background: #ec7b41 url("images/sprite-images.png") repeat scroll 65px 65px;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px -1px #000;
+  cursor: pointer;
+  opacity: 0.3;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 10;
+}
+
+.excluir:hover{ opacity: 0.8;}
+
+.editor {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  float: left;
+  padding: 25px 0;
+  width: 100%;
+}
+
+.editando .editor {
+  position: absolute;
+}
+
+.editando .editar {
+  display: none;
+}
+
+
+.editar {
+  background: #ec7b41 url("images/sprite-images.png") repeat scroll 102px 65px;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px -1px #000;
+  cursor: pointer;
+  opacity: 0.3;
+  position: absolute;
+  right: 35px;
+  top: 5px;
+}
+
+.editar:hover{ opacity: 0.8;}
+
+
+.bloco:hover .editar, .bloco:hover .excluir{ opacity: 1}
+
+.propaganda {
+  border-top: 2px solid #0078c8;
+  float: left;
+  height: 100px;
+  margin-bottom: 12px;
+  margin-top: 50px;
+  width: 990px;
+}
+
+.botao { cursor: pointer;}
+.botao:hover { opacity: 0.7;}
+
+textarea {
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  float: left;
+  height: 360px;
+  padding: 20px;
+  width: 560px;
+}
+
+.fundo-popup {
+  background-color: rgba(0, 0, 0, 0.92);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.popup2 {
+  display: none;
+  left: 50%;
+  margin-left: -300px;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.popup .fechar-grande {
+  left: auto;
+  margin: 0;
+  right: 30px;
+  top: 10px;
+}
+
+.popup-visualizacao table {
+  margin: 40px auto 0;
+}
+
+.propaganda iframe {
+  height: 90px;
+  margin-bottom: 40px;
+  margin-left: 140px;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  width: 728px;
+}
+
+.popup2 > span {
+  color: #fff;
+  float: left;
+  font-size: 25px;
+  margin: 40px 0 20px;
+  width: 100%;
+}
+
+.fechar-grande {
+  left: 50%;
+  margin-left: 122px;
+  position: absolute;
+  top: 68px;
+}
+
+
+
+.interrogacao {
+  background: #ec7b41 url("images/sprite-images.png") repeat scroll 26px 67px;
+  border-radius: 50%;
+  float: left;
+  height: 15px;
+  margin-left: 6px;
+  width: 15px;
+}
+
+
+.finalizar {
+  background: #00984A url("images/sprite-images.png") repeat scroll 421px 66px;
+  border-radius: 50%;
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+
+.mais {
+  background: #ec7b41 url("images/sprite-images.png") repeat scroll 545px 66px;
+  border-radius: 50%;
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+
+.visualizar {
+  background: #ec7b41 url("images/sprite-images.png") repeat scroll 483px 66px;
+  border-radius: 50%;
+  float: left;
+  height: 50px;
+  width: 50px;
+}

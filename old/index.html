@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--
+
+Developer: Gustavo Sapienza
+Art Direction: Gustavo Sapienza
+
+-->
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Gerador html de email marketing</title>
+
+<link rel="author" href="https://plus.google.com/u/0/100929226180914271171/"/>
+<link rel="publisher" href="https://plus.google.com/u/0/100929226180914271171/"/>
+<meta name="keywords" content="e-mail marketing, gerador email marketing, gerador emkt, html email mkt" />
+<meta name="description" content="Ferramenta para gerar o HTML para e-mail marketing" />
+<meta property="og:description" content="Ferramenta para gerar o HTML para e-mail marketing" />
+<meta property="og:url" content="http://www.gustavosapienza.com.br/gerador-html-email-marketing/" />
+<meta property="og:site_name" content="Gerador html de email marketing" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Gerador html de email marketing" />
+<meta property="og:image" content="http://www.gustavosapienza.com.br/producao/delcocktail/imagens/logo_copy.jpg"/>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<SCRIPT src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></SCRIPT>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30104309-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<style>
+body { font-family:Tahoma, Geneva, sans-serif;}
+.tabel { float:left; margin-top:100px; width:100%; margin-bottom:50px;}
+.larguraminima { width:500px;}
+td {cursor:pointer;}
+
+button { width:150px;}
+.foco { border:3px solid #FF6D00!important;}
+table td { border-left:3px solid #fff; border-right:3px solid #fff;}
+.col5, .col6, .col7, #btn6 { width:400px;}
+.topo {
+  background-color: #FFFFFF;
+  height: 130px;
+  margin-left: -5px;
+  margin-top: -5px;
+  position: fixed;
+  width: 100%;
+}
+#btn1{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7{background: #3174ab; /* Old browsers */
+background: -moz-linear-gradient(top,  #3174ab 0%, #3174ab 50%, #0c5b9d 51%, #0c5b9d 51%, #0c5b9d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3174ab), color-stop(50%,#3174ab), color-stop(51%,#0c5b9d), color-stop(51%,#0c5b9d), color-stop(100%,#0c5b9d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #3174ab 0%,#3174ab 50%,#0c5b9d 51%,#0c5b9d 51%,#0c5b9d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #3174ab 0%,#3174ab 50%,#0c5b9d 51%,#0c5b9d 51%,#0c5b9d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #3174ab 0%,#3174ab 50%,#0c5b9d 51%,#0c5b9d 51%,#0c5b9d 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #3174ab 0%,#3174ab 50%,#0c5b9d 51%,#0c5b9d 51%,#0c5b9d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3174ab', endColorstr='#0c5b9d',GradientType=0 ); /* IE6-9 */; border-radius:5px; border:0px; color:#fff; padding:5px; cursor:pointer;}
+
+
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover, #btn6:hover, #btn7:hover { background: #0c5b9d; /* Old browsers */
+background: -moz-linear-gradient(top,  #0c5b9d 0%, #0c5b9d 50%, #3174ab 51%, #3174ab 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0c5b9d), color-stop(50%,#0c5b9d), color-stop(51%,#3174ab), color-stop(100%,#3174ab)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #0c5b9d 0%,#0c5b9d 50%,#3174ab 51%,#3174ab 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #0c5b9d 0%,#0c5b9d 50%,#3174ab 51%,#3174ab 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #0c5b9d 0%,#0c5b9d 50%,#3174ab 51%,#3174ab 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #0c5b9d 0%,#0c5b9d 50%,#3174ab 51%,#3174ab 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c5b9d', endColorstr='#3174ab',GradientType=0 ); /* IE6-9 */
+}
+
+#btn5 {
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+#col3{ cursor:default;}
+p { margin-bottom:0px;}
+.topo { position:fixed; width:100%; height:70px; background-color:#fff; margin-top:-10px;  z-index:1000;}
+tr td div p{ text-align:center; color:#fff; margin:0px;}
+tr td div{ background-color:#999; padding:10px; border:1px solid #fff;}
+tr td div:hover { background-color:#aaa;}
+#geral { width:990px; position:absolute; margin-left:-495px; left:50%;}
+
+.col5, .col6, .col7 { border:#bbb solid 1px; padding:5px}
+.col5:focus, .col6:focus, .col7:focus { border:#36A0F7 solid 1px;}
+
+#resultado {
+  background-color: #000000;
+  color: #FFFFFF;
+  float: left;
+  font-size: 14px;
+  height: 300px;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -150px;
+  position: fixed;
+  top: 50%;
+  width: 500px;
+  z-index: 1000;
+  display: none;
+}
+
+.fechar {
+  background: url("fancybox_sprite.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  height: 35px;
+  left: 50%;
+  margin-left: 232px;
+  margin-top: -166px;
+  position: fixed;
+  top: 50%;
+  width: 35px;
+  z-index: 10000;
+  cursor: pointer;
+  display: none;
+}
+
+.popup-fundo {
+  background-color: #000000;
+  bottom: 0;
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+</style>
+
+<script type='text/javascript' charset="utf-8" src='gerador.js'></script>
+
+<script>
+$(document).ready(function(){
+	
+$("#btn5").click(function(){
+$("table tbody").sortable();
+$("table tbody").disableSelection();
+});
+
+$(".fechar, .popup-fundo").click(function(){
+$("#resultado, .fechar, .popup-fundo").fadeOut();
+});
+
+});
+</script>
+
+</head>
+
+<body>
+
+
+<!--Começa Geral-->
+<div id="geral">
+
+<div class="topo">
+<button id="btn1">Inserir +Fatia</button>
+<button id="btn2">Remover Fatia</button>
+
+<div style="float:right; right:0px; position:fixed; top:0px"><p style="color: #AAAAAA; display: block; float: left; font-size: 13px; margin-top: 22px;">Esta ferramenta te ajudou? Então curta nossa página!</p> <iframe src="//www.facebook.com/plugins/like.php?href=http://www.facebook.com/gustavosapienza&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=368965126451972" scrolling="no" style="margin-left: 10px; margin-top: 20px; width: 150px; float:left;" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+</div>
+
+
+
+<div class="tabel">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><div><p>Clique aqui e altere os campos abaixo para inserir uma imagem:</p></div></td>
+</tr>
+</table>
+</div>
+
+
+<input type="text" class="col3" style="display:none" placeholder="Fatia" onkeypress='return barrarletras(event)' readonly="readonly"/>
+
+<input type="text" class="col5" placeholder="Insira a URL da imagem" name="conteudo" autocomplete="on"/><br /><br />
+<input type="text" class="col7" placeholder="Insira o Hyperlink para fatia de imagem selecionada" name="link" /><br /><br />
+<input type="text" class="col6" placeholder="Insira o texto alternativo" name="conteudo" /><br /><br />
+<button id="btn6">Alterar</button><br />
+
+
+<button id="btn5">Gerar HTML</button>
+<div class="popup-fundo"></div>
+<div class="fechar"></div>
+<textarea placeholder="HTML Final" readonly="" id="resultado"></textarea>
+
+<div id="gerar" style="float:left; margin:30px; display:none!important"></div>
+
+<a href="http://www.gustavosapienza.com.br" style="position:fixed; right:5px; bottom:5px; display:block;" onclick="return true" target="_blank"><img src="http://www.gustavosapienza.com.br/gerador-html-email-marketing/gustavosapienza_cinza.png" /></a>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Gerador de E-mail Marketing -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0538123507599481"
+     data-ad-slot="7181314407"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<!--Fim Geral-->
+
+</body>
+</html>
+
+
